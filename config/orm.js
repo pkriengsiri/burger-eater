@@ -89,7 +89,7 @@ var orm = {
   },
 
   deleteOne: function (table, key, cb) {
-    const queryString = `delete from ?? where id = ?;`;
+    const queryString = `DELETE FROM ?? WHERE ID = ?;`;
 
     connection.query(queryString, [table, key], (err, result) => {
       if (err) throw err;
