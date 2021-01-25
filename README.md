@@ -1,2 +1,4 @@
 # burger-restaurant
-A full-stack burger restaurant app
+A full-stack burger eating simulator
+
+
