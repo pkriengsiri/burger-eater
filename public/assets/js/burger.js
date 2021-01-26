@@ -13,11 +13,6 @@ $(document).ready(function () {
       type: "PUT",
       data: devouredState,
     }).then(function () {
-      if (devoured) {
-        console.log("Ate the burger");
-      } else {
-        console.log("Added burger back to the devoured queue");
-      }
       location.reload();
     });
   });
@@ -27,10 +22,9 @@ $(document).ready(function () {
   $(".delete-burger").on("click", function (event) {
     const id = $(this).data("id");
 
-    $.ajax(`/api/burger/${id}`, {
+    $.ajax(`/api/burgers/${id}`, {
         type: "DELETE"
     }).then(function() {
-        console.log("Deleted burger of ID: "+id);
         location.reload()
     })
   });
