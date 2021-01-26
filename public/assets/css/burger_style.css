@@ -17,11 +17,20 @@ header {
     color: #FFF;
 }
 
+
+
 .burger-btn-devour {
     background-color: #004209;
     color: white;
     border-radius: 10px;
 }
+
+.burger-btn-devour:hover {
+    background-color: #004209;
+    border-radius: 10px;
+    color: rgb(184, 184, 184) !important;
+}
+
 
 .burger-btn-delete {
     background-color: #ed1c24;
