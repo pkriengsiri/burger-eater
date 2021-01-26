@@ -3,9 +3,25 @@ body {
 }
 
 header {
-    background-color: #f2ba49;
+    background-color: #ffc40c;
     text-align: center;
-    color: #644117;
+    color: #000;
+}
+
+.burger-btn-devour {
+    background-color: #004209;
+    color: white;
+    border-radius: 10px;
+}
+
+.burger-btn-delete {
+    background-color: #ed1c24;
+    color: white;
+    border-radius: 10px;
+}
+
+.burger-btns {
+    float: right;
 }
 
 .burger-footer {
@@ -25,16 +41,21 @@ header {
 .list-group {
     padding-right: 0px;
     border-radius: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 .list-group-item {
     background-color: #644117;
-    color: rgb(250, 111, 111);
+    color: #ffc40c;
     border-radius: 10px;
     margin: 3px;
 
 }
 
 #addBurger {
-    background-color: #b0bf1a;
+    background-color: #f2ba49;
+    border-radius: 20px;
+    padding: 10px;
+    color: #000;
 }
