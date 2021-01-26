@@ -1,10 +1,6 @@
 # burger-restaurant
 A full-stack burger eating simulator
 
-Tablecloth form background from: https://cssdeck.com/labs/wqehr26k
-Background image from Annie Spratt: https://unsplash.com/photos/KPeGlRjUcJg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink 
-Burger Names: https://bobs-burgers.fandom.com/wiki/Burger_of_the_Day 
-
 ## Description
 This application is a full-stack burger eating tracker/ simulator. The front-end was written using HTML, CSS, JavaScript, and jQuery.  The backend was written using Node.js, Express, and MySQL.  HTML rendering is handled via handlebars.  The application follows the model-view-controller design pattern and uses a custom object relational mapper. 
 
@@ -36,27 +32,25 @@ Modify the `/config/connection.js` file to connect to your MySQL server.   Run t
 
 ## Usage
 
-Fill out the form to add a burger to the "Burgers To Devour" list.
+Link to the deployed site: https://burger-experience.herokuapp.com/
 
-Click on the "Devour" button to move the burger to the "Burgers I've Eaten" list.
+    Fill out the form to add a burger to the "Burgers To Devour" list.
 
-Click on the "Eat Again" button to move the burger back to the "Burgers To Devour" list.
+    Click on the "Devour" button to move the burger to the "Burgers I've Eaten" list.
 
-Click on the "Delete" button to delete the burger.,
+    Click on the "Eat Again" button to move the burger back to the "Burgers To Devour" list.
 
-![demo of employee-tracker application](./demo/demo.gif)
+    Click on the "Delete" button to delete the burger.,
 
-[Video demo of the application](https://drive.google.com/file/d/14C_6sO917B9JxrjquNRSR30Se6XTPIIa/view)
+![demo of employee-tracker application](./public/assets/images/demo.gif)
+
 
 ## Credits
 Collaborators on this project included instructional staff, TAs, and students in the Georgia Tech Coding Boot Camp Winter 2020 cohort.
 
-ASCII artwork generated from https://www.patorjk.com/software/taag/ 
-
-### References
-* https://stackoverflow.com/questions/10195451/sql-inner-join-with-3-tables
-* https://stackoverflow.com/questions/3709560/joining-three-tables-using-mysql
-* https://www.mysqltutorial.org/mysql-self-join/
+* Tablecloth form background from: https://cssdeck.com/labs/wqehr26k
+* Background image from Annie Spratt: https://unsplash.com/photos/KPeGlRjUcJg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink 
+* Burger Names: https://bobs-burgers.fandom.com/wiki/Burger_of_the_Day 
 
 
 ## License
@@ -97,9 +91,9 @@ SOFTWARE.
 No contributions are being accepted at this time.
   
 ## Badges
-* [![GitHub issues](https://img.shields.io/github/issues/pkriengsiri/employee-tracker)](https://github.com/pkriengsiri/employee-tracker/issues)
-* [![GitHub forks](https://img.shields.io/github/forks/pkriengsiri/employee-tracker)](https://github.com/pkriengsiri/employee-tracker/network)
-* [![GitHub license](https://img.shields.io/github/license/pkriengsiri/employee-tracker)](https://github.com/pkriengsiri/employee-tracker/blob/main/LICENSE)
+* [![GitHub issues](https://img.shields.io/github/issues/pkriengsiri/burger-eater)](https://github.com/pkriengsiri/burger-eater/issues)
+* [![GitHub stars](https://img.shields.io/github/stars/pkriengsiri/burger-eater)](https://github.com/pkriengsiri/burger-eater/stargazers)
+* [![GitHub license](https://img.shields.io/github/license/pkriengsiri/burger-eater)](https://github.com/pkriengsiri/burger-eater/blob/main/LICENSE)
 
 
 ## Questions
