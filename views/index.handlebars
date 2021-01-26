@@ -1,26 +1,38 @@
-<h2>Burgers To Devour</h2>
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <form>
+                <div class="mb-3">
+                    <label for="burgerInput" class="form-label">Add a burger to devour!</label>
+                    <input type="text" class="form-control" id="burgerInput">
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+            </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <h2>Burgers To Devour</h2>
+            <ul>
+                {{#each burgers}}
+                {{#unless devoured}}
+                {{> burgers/burger-block devoured=true}}
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-6">
+            <h2>Burgers I've Eaten</h2>
+            <ul>
+                {{#each burgers}}
+                {{#if devoured}}
+                {{> burgers/burger-block devoured=false}}
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
 
-<h2>Burgers I've Eaten</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<form>
-  <div class="mb-3">
-    <label for="burgerInput" class="form-label">Add a burger to devour!</label>
-    <input type="text" class="form-control" id="burgerInput">
-  </div>
-  <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-</form>
+</div>
