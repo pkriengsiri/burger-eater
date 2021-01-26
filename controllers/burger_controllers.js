@@ -11,7 +11,6 @@ router.get("/", function (req, res) {
     var hbsObject = {
       burgers: data,
     };
-    console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
@@ -48,7 +47,6 @@ router.put("/api/burgers/:id", function (req, res) {
 
 router.delete("/api/burgers/:id", (req, res) => {
   const id = parseInt(req.params.id);
-  console.log(id);
 
   burger.delete(id, (result) => {
     if (result.affectedRows == 0) {
