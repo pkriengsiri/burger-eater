@@ -38,8 +38,9 @@ function objToSql(ob) {
   return arr.toString();
 }
 
-// Object for all our SQL statement functions.
+// ORM object for all our SQL statement functions.
 var orm = {
+  // Makes the SELECT query for MySQL
   selectAll: function (tableInput, cb) {
     var queryString = "SELECT * FROM " + tableInput + ";";
     connection.query(queryString, function (err, result) {
@@ -69,7 +70,7 @@ var orm = {
       cb(result);
     });
   },
-  // An example of objColVals would be {name: panther, sleepy: true}
+  // Makes the UPDATE query in MySQL
   updateOne: function (table, objColVals, condition, cb) {
     var queryString = "UPDATE " + table;
 
@@ -88,6 +89,7 @@ var orm = {
     });
   },
 
+  // Makes the DELETE query in MySQL
   deleteOne: function (table, key, cb) {
     const queryString = `DELETE FROM ?? WHERE ID = ?;`;
 
