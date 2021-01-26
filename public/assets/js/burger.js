@@ -28,4 +28,18 @@ $(document).ready(function () {
         location.reload()
     })
   });
+
+  // Event listener for submit button
+  // Makes an AJAX post request to add the burger to the devour list
+  $("#submit").on("click", function(event) {
+      event.preventDefault();
+      console.log("clicked on the submit button");
+      const burger_name = $("#burgerInput").val();
+      $.ajax("/api/burgers", {
+          method: "POST",
+          data: {burger_name: burger_name}
+      }).then(function() {
+          location.reload();
+      })
+  })
 });
