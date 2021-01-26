@@ -1,11 +1,20 @@
+/* body {
+    background-color:white;
+    background-image: 
+        linear-gradient(90deg, rgba(0,100,200,.5) 50%, transparent 50%),
+        linear-gradient(rgba(0,100,200,.5) 50%, transparent 50%);
+    background-size:50px 50px;
+} */
+
 body {
-    background-color: #fffaf0;
+    background-image: url("../images/wood.jpg");
+    background-repeat: repeat;
 }
 
 header {
-    background-color: #ffc40c;
+    background-color: #36454F;
     text-align: center;
-    color: #000;
+    color: #FFF;
 }
 
 .burger-btn-devour {
@@ -36,6 +45,7 @@ header {
     border-radius: 30px 30px 0px 0px;
     margin-bottom: 0px;
     padding: 5px;
+    color: #36454F;
 }
 
 .list-group {
@@ -54,8 +64,11 @@ header {
 }
 
 #addBurger {
-    background-color: #f2ba49;
-    border-radius: 20px;
-    padding: 10px;
-    color: #000;
+    background-color:white;
+    background-image: 
+        linear-gradient(90deg, rgba(48, 127, 206, 0.5) 50%, transparent 50%),
+        linear-gradient(rgba(48, 127, 206, 0.5) 50%, transparent 50%);
+    background-size:25px 25px;
+    padding: 15px;
+    color: rgb(0, 0, 78);
 }
