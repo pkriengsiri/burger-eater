@@ -4,11 +4,9 @@ $(document).ready(function () {
   $(".devour-state").on("click", function (event) {
     const id = $(this).data("id");
     const devoured = $(this).data("devoured");
-
     var devouredState = {
       devoured: devoured,
     };
-
     $.ajax(`/api/burgers/${id}`, {
       type: "PUT",
       data: devouredState,
@@ -21,7 +19,6 @@ $(document).ready(function () {
   // Makes and AJAX delete call to delete the burger
   $(".delete-burger").on("click", function (event) {
     const id = $(this).data("id");
-
     $.ajax(`/api/burgers/${id}`, {
         type: "DELETE"
     }).then(function() {
@@ -33,7 +30,6 @@ $(document).ready(function () {
   // Makes an AJAX post request to add the burger to the devour list
   $("#submit").on("click", function(event) {
       event.preventDefault();
-      console.log("clicked on the submit button");
       const burger_name = $("#burgerInput").val();
       $.ajax("/api/burgers", {
           method: "POST",
